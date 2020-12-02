@@ -1,8 +1,10 @@
 import csv
 import torch
+import os
 
 # function to write PSNR to csv files
 def write_csv(file_path, y_list, upscale_factor):
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
     solution_rows = [('epoch', 'Eval PSNR', 'Upscale')] + [(i, y, upscale_factor) for (i, y) in enumerate(y_list)]
 
     with open(file_path, 'w', newline="") as f:

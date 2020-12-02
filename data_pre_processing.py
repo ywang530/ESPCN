@@ -44,6 +44,6 @@ def generate_dataset(root_dir ,data_type, upscale_factor, crop):
 
 
 if __name__ == "__main__":
-    for i in range(2,6):
+    for i in range(6,9):
         generate_dataset(root_dir='data/original', data_type='train', upscale_factor=i, crop = 256)
         generate_dataset(root_dir='data/original', data_type='val', upscale_factor=i, crop = 256)

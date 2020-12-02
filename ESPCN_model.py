@@ -11,18 +11,16 @@ class ESPCN(torch.nn.Module):
         # input channel =1 since only consider the luminance channel in YCbCr color space
         self.sequences = nn.Sequential(
             # (f1, n1) = (5, 64)
-            # nn.Conv2d(1, 64, kernel_size=5, stride=1, padding=2),
-            nn.Conv2d(1, 64, (5, 5), (1, 1), (2, 2)),
+            nn.Conv2d(1, 64, kernel_size=5, stride=1, padding=2),
             nn.Tanh(),
 
             # (f2, n2) = (3, 64)
-            # nn.Conv2d(64, 32, kernel_size=3, stride=1, padding=1),
-            nn.Conv2d(64, 32, (3, 3), (1, 1), (1, 1)),
+            nn.Conv2d(64, 32, kernel_size=3, stride=1, padding=1),
             nn.Tanh(),
 
             # f3 = 3
-            # nn.Conv2d(32, 1*(self.upscale**2), kernel_size=3, stride=1, padding=1),
-            nn.Conv2d(32, 1 * (upscale_factor ** 2), (3, 3), (1, 1), (1, 1)),
+            nn.Conv2d(32, 1*(self.upscale**2), kernel_size=3, stride=1, padding=1),
+
             # Rearranges elements in a tensor of shape (-1, C*r^2, H, W) 
             # to a tensor of shape (-1, C, H*r, W*r)
             nn.PixelShuffle(upscale_factor),

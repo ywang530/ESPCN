@@ -105,11 +105,12 @@ def train(scale, device):
     torch.save(best_weights, os.path.join(save_dir, 'best.pth'))
 
     # write PSNR to CSV file
-    csv_name = 'Eval_PSNR_X' + str(scale) + '.csv'
+    csv_name = 'results/Eval_PSNR_X' + str(scale) + '.csv'
     write_csv(csv_name, train_psnr, scale)
 
     # write losses to CSV file
-    file_path = 'train_loss_X' + str(scale) + '.csv'
+    file_path = 'results/train_loss_X' + str(scale) + '.csv'
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
     solution_rows = [('epoch', 'train_loss', 'Upscale')] + [(i, y, scale) for (i, y) in enumerate(train_loss)]
     with open(file_path, 'w', newline="") as f:
         writer = csv.writer(f)
@@ -123,6 +124,6 @@ if __name__ == "__main__":
     
     # Upscale Factor
     
-    train(5, device)
+    train(8, device)
 
 

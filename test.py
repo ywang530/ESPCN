@@ -78,6 +78,7 @@ def test(data_path, scale, device, results_path, csv_path, label):
    
     # write to CSV
     file_path = csv_path + '_X' + str(scale) + '.csv'
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
     solution_rows = [('Image', 'ESPCN PSNR', 'BICUBIC PSNR','Upscale')] + [(y, ESPCN_PSNR[i], BICUBIC_PSNR[i], scale) for (i, y) in enumerate(images_name)]
     with open(file_path, 'w', newline="") as f:
         writer = csv.writer(f)
@@ -91,14 +92,14 @@ if __name__ == "__main__":
     Sets = ['Set5', 'Set14', 'celeba']
 
     for name in Sets:
-        for scale in range (2,6):
+        for scale in range (6,9):
             data_path = 'data/test/' + name + '/'
 
             results_path = 'results/' + name + '/' 
             if not os.path.exists(results_path):
                 os.makedirs(results_path)
 
-            csv_path = name + '_ESPCN_BICUBIC_Comparison' 
+            csv_path = 'results/' + name + '_ESPCN_BICUBIC_Comparison' 
 
             test(data_path, scale, device, results_path, csv_path, name)
     
