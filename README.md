@@ -28,4 +28,11 @@ To evaluate the performance of the model, I used PSNR in dB as a metric to compa
 <img src="https://latex.codecogs.com/svg.latex?PSNR&space;=&space;10\times&space;\log_{10}\frac{1}{MSE}" title="PSNR = 10\times \log_{10}\frac{1}{MSE}" />
 
 ##  Results Comparison 
+### Upscale x2
+|Dataset| Input        | ESPCN         |   Bicubic    |
+| ------------- | ------------- | ------------- |------------- |
+|Set 14|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/LR_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/UPSCALE_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/BICUBIC_X2/comic.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/LR_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/UPSCALE_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/BICUBIC_X2/butterfly.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/LR_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/UPSCALE_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/BICUBIC_X2/000010.png)|
+
 
