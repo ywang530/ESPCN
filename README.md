@@ -25,6 +25,7 @@ The Loss Function used is pixel-wise mean squared error (MSE) and the Optimizer 
 
 To evaluate the performance of the model, I used PSNR in dB as a metric to compare with commonly used bicubic interpolation:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=PSNR&space;=&space;10\times&space;\log_{10}\frac{1}{MSE}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?PSNR&space;=&space;10\times&space;\log_{10}\frac{1}{MSE}" title="PSNR = 10\times \log_{10}\frac{1}{MSE}" /></a>
+<img src="https://latex.codecogs.com/svg.latex?PSNR&space;=&space;10\times&space;\log_{10}\frac{1}{MSE}" title="PSNR = 10\times \log_{10}\frac{1}{MSE}" />
 
 ##  Results Comparison 
+
