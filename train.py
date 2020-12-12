@@ -21,7 +21,7 @@ def train(scale, device):
 
     # MSE loss function
     criterion = nn.MSELoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-2)
 
     # Learning rate scheduler
     scheduler = MultiStepLR(optimizer, milestones=[15, 80], gamma=0.1)
