@@ -29,10 +29,38 @@ To evaluate the performance of the model, I used PSNR in dB as a metric to compa
 
 ##  Results Comparison 
 ### Upscale x2
-|Dataset| Input        | ESPCN         |   Bicubic    |
-| ------------- | ------------- | ------------- |------------- |
-|Set 14|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/LR_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/UPSCALE_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/BICUBIC_X2/comic.png)|
-|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/LR_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/UPSCALE_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/BICUBIC_X2/butterfly.png)|
-|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/LR_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/UPSCALE_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/BICUBIC_X2/000010.png)|
+|Dataset| Input        | ESPCN         |   Bicubic    | Original |
+| ------------- | ------------- | ------------- |------------- | ------------- |
+|Set 14|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/LR_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/UPSCALE_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/BICUBIC_X2/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set14/comic.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/LR_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/UPSCALE_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/BICUBIC_X2/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set5/butterfly.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/LR_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/UPSCALE_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/BICUBIC_X2/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/celeba/000010.png)|
 
+### Upscale x3
+|Dataset| Input        | ESPCN         |   Bicubic    | Original |
+| ------------- | ------------- | ------------- |------------- | ------------- |
+|Set 14|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/LR_X3/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/UPSCALE_X3/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/BICUBIC_X3/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set14/comic.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/LR_X3/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/UPSCALE_X3/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/BICUBIC_X3/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set5/butterfly.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/LR_X3/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/UPSCALE_X3/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/BICUBIC_X3/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/celeba/000010.png)|
 
+### Upscale x4
+|Dataset| Input        | ESPCN         |   Bicubic    | Original |
+| ------------- | ------------- | ------------- |------------- | ------------- |
+|Set 14|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/LR_X4/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/UPSCALE_X4/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/BICUBIC_X4/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set14/comic.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/LR_X4/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/UPSCALE_X4/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/BICUBIC_X4/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set5/butterfly.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/LR_X4/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/UPSCALE_X4/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/BICUBIC_X4/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/celeba/000010.png)|
+
+### Upscale x5
+|Dataset| Input        | ESPCN         |   Bicubic    | Original |
+| ------------- | ------------- | ------------- |------------- | ------------- |
+|Set 14|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/LR_X5/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/UPSCALE_X5/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set14/BICUBIC_X5/comic.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set14/comic.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/LR_X5/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/UPSCALE_X5/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/Set5/BICUBIC_X5/butterfly.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/Set5/butterfly.png)|
+|Set 5|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/LR_X5/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/UPSCALE_X5/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/results/celeba/BICUBIC_X5/000010.png)|![](https://github.com/ywang530/ESPCN/blob/main/data/test/celeba/000010.png)|
+
+##  Analysis
+| Evaluation PSNR | PSNR line fitting |
+| ------------- | ------------- |
+|![](https://github.com/ywang530/ESPCN/blob/main/analysis/Eval%20PSNR.png)|![](https://github.com/ywang530/ESPCN/blob/main/analysis/fitting.png)|
+
+| Set 5 | Set 14 | CelebA |
+| ------------- | ------------- | ------------- |
+|![](https://github.com/ywang530/ESPCN/blob/main/analysis/set%2014.png)|![](https://github.com/ywang530/ESPCN/blob/main/analysis/set5.png)| ![](https://github.com/ywang530/ESPCN/blob/main/analysis/celeba.png)
